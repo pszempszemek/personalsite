@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700&display=swap");
+@import "./breakpoints";
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: "Fira Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #333;
+  max-width: 1200px;
+}
+html {
+  background-color: white;
 }
 
 code {
@@ -14,4 +19,11 @@ code {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+@media all and (max-width: 800px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
 }

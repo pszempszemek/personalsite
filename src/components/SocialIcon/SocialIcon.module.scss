@@ -1,0 +1,13 @@
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  height: 40px;
+  color: #b4b4b4;
+
+  &:hover {
+    color: white;
+    cursor: pointer;
+  }
+}

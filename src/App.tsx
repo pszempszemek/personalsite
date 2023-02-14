@@ -1,5 +1,5 @@
-import { createBrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import styles from "./App.module.scss";
 import HeroSection from "./components/HeroSection/HeroSection";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact.tsx/Contact";
@@ -9,16 +9,9 @@ import Home from "./pages/Home/Home";
 import Error from "./pages/Error/Error";
 import { BrowserRouter } from "react-router-dom";
 
-const router = createBrowserRouter([
-  { path: "/", element: <Home /> },
-  { path: "/about", element: <About /> },
-  { path: "/portfolio", element: <Portfolio /> },
-  { path: "/contact", element: <Contact /> },
-]);
-
 function App() {
   return (
-    <div>
+    <div className={styles.wrapper}>
       <BrowserRouter>
         <HeroSection />
         <Routes>
