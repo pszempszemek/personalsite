@@ -1,0 +1,24 @@
+@mixin highLight {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.25rem;
+  color: #b4b4b4;
+  cursor: pointer;
+
+  &:hover {
+    @include highLight();
+  }
+}
+
+.contact {
+  border: solid 2px #b4b4b4;
+}
+
+.highLighted {
+  @include highLight();
+}
