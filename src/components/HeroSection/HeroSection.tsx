@@ -2,7 +2,7 @@ import styles from "./HeroSection.module.scss";
 import HeroBtn from "../HeroBtn/HeroBtn";
 import { useLocation } from "react-router-dom";
 
-const Routes = [
+const routes = [
   { id: "Home", url: "/" },
   { id: "About", url: "/about" },
   { id: "Portfolio", url: "/portfolio" },
@@ -12,8 +12,8 @@ const Routes = [
 const Hero = () => {
   const location = useLocation();
   return (
-    <div className={styles.HeroContainer}>
-      {Routes.map((route) => (
+    <div className={styles.container}>
+      {routes.map((route) => (
         <HeroBtn
           key={route.id}
           route={route}

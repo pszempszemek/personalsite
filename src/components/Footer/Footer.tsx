@@ -1,8 +1,31 @@
 import React from "react";
+import { GithubSvg, InstagramSvg, LinkedinSvg } from "../../assets/icons";
+import SocialIcon from "../SocialIcon/SocialIcon";
 import styles from "./Footer.module.scss";
 
+const socials = [
+  {
+    id: "Github",
+    Svg: <GithubSvg />,
+  },
+  {
+    id: "Linked In",
+    Svg: <LinkedinSvg />,
+  },
+  {
+    id: "Instagram",
+    Svg: <InstagramSvg />,
+  },
+];
+
 const Footer = () => {
-  return <div className={styles.container}>Footer</div>;
+  return (
+    <div className={styles.container}>
+      {socials.map((social) => (
+        <SocialIcon key={social.id} social={social} />
+      ))}
+    </div>
+  );
 };
 
 export default Footer;
