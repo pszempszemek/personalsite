@@ -11,9 +11,9 @@ import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <div className={styles.wrapper}>
-      <BrowserRouter>
-        <HeroSection />
+    <BrowserRouter>
+      <HeroSection />
+      <div className={styles.wrapper}>
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="about" element={<About />}></Route>
@@ -21,10 +21,9 @@ function App() {
           <Route path="contact" element={<Contact />}></Route>
           <Route path={"*"} element={<Error />} />
         </Routes>
-      </BrowserRouter>
-
+      </div>
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 

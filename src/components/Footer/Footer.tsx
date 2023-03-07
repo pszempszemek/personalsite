@@ -20,11 +20,13 @@ const socials = [
 
 const Footer = () => {
   return (
-    <div className={styles.container}>
-      {socials.map((social) => (
-        <SocialIcon key={social.id} social={social} />
-      ))}
-    </div>
+    <footer className={styles.footerContainer}>
+      <div className={styles.socialWrapper}>
+        {socials.map((social) => (
+          <SocialIcon key={social.id} social={social} />
+        ))}
+      </div>
+    </footer>
   );
 };
 
