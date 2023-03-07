@@ -1,0 +1,15 @@
+.contactIconContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  height: 100%;
+  width: 50%;
+  color: #b4b4b4;
+
+  &:hover {
+    color: white;
+    cursor: pointer;
+  }
+}
