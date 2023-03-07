@@ -12,7 +12,7 @@ const routes = [
 const Hero = () => {
   const location = useLocation();
   return (
-    <div className={styles.container}>
+    <div className={styles.navbarContainer}>
       {routes.map((route) => (
         <HeroBtn
           key={route.id}
