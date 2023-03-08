@@ -1,0 +1,41 @@
+.container {
+  display: block;
+  padding: 2.5rem;
+}
+.modelsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  padding: 2.5rem;
+}
+
+.sectionHeader {
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 2rem;
+}
+
+.BackArrow {
+  margin-right: 2rem;
+  color: #6d6d6d;
+
+  &:hover {
+    color: white;
+    cursor: pointer;
+  }
+}
+
+@media all and (max-width: 850px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

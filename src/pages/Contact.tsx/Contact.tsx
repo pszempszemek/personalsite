@@ -29,7 +29,7 @@ const Contact = () => {
           <ContactIcon key={option.id} social={option} />
         ))}
       </div>
-      <p>or message me on socials shown at the bottom</p>
+      <p>or use socials shown at the bottom</p>
     </div>
   );
 };
